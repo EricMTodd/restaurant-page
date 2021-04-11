@@ -1,20 +1,16 @@
 const landingPageController = (() => {
-	const applyLayer = () => {
-		let layer = document.createElement('div');
-		layer.id = 'layer';
-		document.querySelector('#content').appendChild(layer);
-	};
-
 	const createHeader = () => {
 		let header = document.createElement('div');
 		header.id = 'header';
-		document.querySelector('#layer').appendChild(header);
+		console.log('createHeader');
+		document.querySelector('#content').appendChild(header);
 	};
 
 	const createTitle = () => {
 		let title = document.createElement('div');
 		title.id = 'title';
 		title.innerText = 'The Boozy Badger';
+		console.log('createTitle');
 		document.querySelector('#header').appendChild(title);
 	};
 
@@ -22,6 +18,7 @@ const landingPageController = (() => {
 		let tagline = document.createElement('div');
 		tagline.id = 'tagline';
 		tagline.innerText = 'Fine Brews and Crews';
+		console.log('createTagline');
 		document.querySelector('#header').appendChild(tagline);
 	};
 
@@ -29,11 +26,11 @@ const landingPageController = (() => {
 		let footer = document.createElement('div');
 		footer.id = 'footer';
 		footer.innerText = 'Made with ❤️ by Eric M. Todd';
+		console.log('createFooter');
 		document.querySelector('#content').appendChild(footer);
 	};
 
 	return {
-		applyLayer,
 		createHeader,
 		createTitle,
 		createTagline,

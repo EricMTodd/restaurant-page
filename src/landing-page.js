@@ -1,25 +1,44 @@
 const landingPageController = (() => {
+	const applyLayer = () => {
+		let layer = document.createElement('div');
+		layer.id = 'layer';
+		document.querySelector('#content').appendChild(layer);
+	};
 
-  const sayHello = () => {
-    console.log("Hello from landing-page.js!")
-  }
+	const createHeader = () => {
+		let header = document.createElement('div');
+		header.id = 'header';
+		document.querySelector('#layer').appendChild(header);
+	};
 
-  const writeToDoc = (string) => {
-    document.write(`<h1>${string}</h1>`)
-  }
+	const createTitle = () => {
+		let title = document.createElement('div');
+		title.id = 'title';
+		title.innerText = 'The Boozy Badger';
+		document.querySelector('#header').appendChild(title);
+	};
 
-  const appendButton = () => {
-    let button = document.createElement('button');
-    button.innerText = 'Click Me!'
-    button.addEventListener('click', (e) => console.log('click'))
-    document.body.appendChild(button);
-  }
+	const createTagline = () => {
+		let tagline = document.createElement('div');
+		tagline.id = 'tagline';
+		tagline.innerText = 'Fine Brews and Crews';
+		document.querySelector('#header').appendChild(tagline);
+	};
 
-  return {
-    sayHello,
-    writeToDoc,
-    appendButton,
-  }
-})()
+	const createFooter = () => {
+		let footer = document.createElement('div');
+		footer.id = 'footer';
+		footer.innerText = 'Made with ❤️ by Eric M. Todd';
+		document.querySelector('#content').appendChild(footer);
+	};
 
-export default landingPageController
+	return {
+		applyLayer,
+		createHeader,
+		createTitle,
+		createTagline,
+		createFooter,
+	};
+})();
+
+export { landingPageController };

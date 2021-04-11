@@ -1,5 +1,9 @@
-import landingPageController from './landing-page'
+import { landingPageController as lpc } from './landing-page';
 
-landingPageController.sayHello()
-landingPageController.writeToDoc("Get Fukt")
-landingPageController.appendButton()
+const initializeLandingPage = (() => {
+	lpc.applyLayer();
+	lpc.createHeader();
+	lpc.createTitle();
+	lpc.createTagline();
+	lpc.createFooter();
+})();

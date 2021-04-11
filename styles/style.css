@@ -1,0 +1,79 @@
+@font-face {
+	font-family: cloister-black;
+	src: url(../fonts/cloister-black.ttf);
+}
+
+@font-face {
+	font-family: anyva;
+	src: url(../fonts/anyva.otf);
+}
+
+@font-face {
+	font-family: the-blacklist;
+	src: url(../fonts/the-blacklist.ttf);
+}
+
+* {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+html {
+	background-image: url(../images/keg-taps-scaled.jpeg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+body {
+	margin: 0 auto;
+}
+
+#container {
+	position: relative;
+}
+
+#title {
+	font-family: cloister-black;
+	font-size: 72px;
+	font-weight: normal;
+	color: gold;
+	text-shadow: 2px -5px 5px black;
+}
+
+#tagline {
+	font-family: the-blacklist;
+	font-size: 32px;
+	color: gold;
+	text-shadow: 1px -2px 1px black;
+}
+
+#footer {
+	font-size: 20px;
+	background-color: black;
+	height: 22px;
+	width: 100%;
+	position: absolute;
+	color: gold;
+	bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#footerSpan {
+	font-family: the-blacklist;
+}
+
+#footer a {
+	font-family: the-blacklist;
+	text-decoration: none;
+	color: gold;
+}
+
+#footer a:visited {
+	color: gold;
+}
+
+#footer a:hover {
+	color: white;
+}

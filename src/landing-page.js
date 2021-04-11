@@ -27,6 +27,7 @@ const landingPageController = (() => {
 		footerSpan.id = 'footerSpan';
 		footer.appendChild(footerSpan);
 		let gitHubLink = document.createElement('a');
+		gitHubLink.target = '_blank';
 		gitHubLink.innerText = 'Eric M. Todd';
 		gitHubLink.href = 'https://github.com/EricMTodd';
 		footer.appendChild(gitHubLink);

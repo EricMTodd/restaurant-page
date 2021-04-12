@@ -19,24 +19,13 @@
 }
 
 html {
-	margin-top: 60px;
-	position: absolute;
-	top: 0;
+	width: 1200px;
+	margin: auto;
+	margin-top: 30px;
 	background-image: url(../images/keg-taps-scaled.jpeg);
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin-left: 23%;
-	height: 700px;
-	width: 1000px;
-}
-
-body {
-	margin: 0 auto;
-}
-
-#container {
-	position: relative;
 }
 
 #title {
@@ -55,10 +44,11 @@ body {
 }
 
 #footer {
+	width: 1200px;
+	margin: auto;
 	font-size: 20px;
 	background-color: black;
 	height: 22px;
-	width: 100%;
 	color: gold;
 	bottom: 0;
 	position: absolute;

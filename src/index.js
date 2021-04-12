@@ -1,8 +1,12 @@
-import { landingPageController as lpc } from './landing-page';
+import { coreContentController as core } from './core';
 
-const initializeLandingPage = (() => {
-	lpc.createHeader();
-	lpc.createTitle();
-	lpc.createTagline();
-	lpc.createFooter();
+const theBoozyBadger = (() => {
+	const initializeLandingPage = (() => {
+		core.createHeader();
+		core.createTitle();
+		core.createTagline();
+		core.createNav();
+		core.createFooter();
+	})();
+	return {};
 })();

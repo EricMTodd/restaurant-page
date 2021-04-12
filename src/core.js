@@ -1,4 +1,4 @@
-const landingPageController = (() => {
+const coreContentController = (() => {
 	const createHeader = () => {
 		let header = document.createElement('div');
 		header.id = 'header';
@@ -19,13 +19,39 @@ const landingPageController = (() => {
 		document.querySelector('#header').appendChild(tagline);
 	};
 
+	const createNav = () => {
+		let nav = document.createElement('div');
+		nav.id = 'nav';
+		document.querySelector('#content').appendChild(nav);
+
+		let aboutLink = document.createElement('a');
+		aboutLink.id = 'about-link';
+		aboutLink.innerText = 'About Us';
+		nav.appendChild(aboutLink);
+
+		let contactLink = document.createElement('a');
+		contactLink.id = 'contact-link';
+		contactLink.innerText = 'Contact Us';
+		nav.appendChild(contactLink);
+
+		let menuLink = document.createElement('a');
+		menuLink.id = 'menu-link';
+		menuLink.innerText = 'Our Menu';
+		nav.appendChild(menuLink);
+	};
+
+	const createContainer = () => {
+		// Do stuff
+	};
+
 	const createFooter = () => {
 		let footer = document.createElement('div');
 		footer.id = 'footer';
+
 		let footerSpan = document.createElement('span');
 		footerSpan.innerText = 'Made with ❤️ by ';
-		footerSpan.id = 'footerSpan';
 		footer.appendChild(footerSpan);
+
 		let gitHubLink = document.createElement('a');
 		gitHubLink.target = '_blank';
 		gitHubLink.innerText = 'Eric M. Todd';
@@ -38,8 +64,9 @@ const landingPageController = (() => {
 		createHeader,
 		createTitle,
 		createTagline,
+		createNav,
 		createFooter,
 	};
 })();
 
-export { landingPageController };
+export { coreContentController };

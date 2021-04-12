@@ -4,4 +4,8 @@ Lesson link: https://theodinproject.com/paths/full-stack-javascript/courses/java
 
 ## Descrption
 
-## Plans
+## TODO
+
+- Create about tab
+- Create contact tab
+- Create menu tab

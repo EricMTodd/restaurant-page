@@ -1,3 +1,7 @@
+import { aboutPageController } from './about';
+import { contactPageController } from './contact';
+import { menuPageController } from './menu';
+
 const coreContentController = (() => {
 	const createHeader = () => {
 		let header = document.createElement('div');
@@ -27,21 +31,26 @@ const coreContentController = (() => {
 		let aboutLink = document.createElement('a');
 		aboutLink.id = 'about-link';
 		aboutLink.innerText = 'About Us';
+		aboutLink.addEventListener('click', (e) =>
+			aboutPageController.renderAboutContainer()
+		);
 		nav.appendChild(aboutLink);
 
 		let contactLink = document.createElement('a');
 		contactLink.id = 'contact-link';
 		contactLink.innerText = 'Contact Us';
+		contactLink.addEventListener('click', (e) =>
+			contactPageController.renderContactContainer()
+		);
 		nav.appendChild(contactLink);
 
 		let menuLink = document.createElement('a');
 		menuLink.id = 'menu-link';
 		menuLink.innerText = 'Our Menu';
+		menuLink.addEventListener('click', (e) =>
+			menuPageController.renderMenuContainer()
+		);
 		nav.appendChild(menuLink);
-	};
-
-	const createContainer = () => {
-		// Do stuff
 	};
 
 	const createFooter = () => {

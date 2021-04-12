@@ -1,3 +1,10 @@
 const aboutPageController = (() => {
-	return {};
+	const renderAboutContainer = () => {
+		console.log('renderAboutContainer');
+	};
+	return {
+		renderAboutContainer,
+	};
 })();
+
+export { aboutPageController };

@@ -1,5 +1,4 @@
 import { coreContentController as core } from './core';
-
 const theBoozyBadger = (() => {
 	const initializeLandingPage = (() => {
 		core.createHeader();
@@ -8,5 +7,6 @@ const theBoozyBadger = (() => {
 		core.createNav();
 		core.createFooter();
 	})();
+
 	return {};
 })();

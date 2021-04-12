@@ -44,8 +44,8 @@ body {
 #tagline {
 	font-family: the-blacklist;
 	font-size: 32px;
-	color: gold;
 	text-shadow: 1px -2px 1px black;
+	color: gold;
 }
 
 #footer {
@@ -60,13 +60,14 @@ body {
 	padding-bottom: 5px;
 }
 
-#footerSpan {
+#footer span {
 	font-family: the-blacklist;
 }
 
 #footer a {
 	font-family: the-blacklist;
 	text-decoration: none;
+	transition: color 0.2s ease;
 	color: gold;
 }
 
@@ -75,5 +76,45 @@ body {
 }
 
 #footer a:hover {
+	transition: color 0.2s ease;
 	color: white;
+}
+
+#nav {
+	margin-top: 10px;
+}
+
+#nav a:hover {
+	transition: color 0.2s ease;
+	color: white;
+}
+
+#about-link {
+	font-family: the-blacklist;
+	transition: color 0.2s ease;
+	color: gold;
+	padding-right: 10px;
+	border-right: solid gold 2px;
+	font-size: 32px;
+	text-shadow: 1px -2px 1px black;
+}
+
+#contact-link {
+	font-family: the-blacklist;
+	transition: color 0.2s ease;
+	color: gold;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 32px;
+	text-shadow: 1px -2px 1px black;
+}
+
+#menu-link {
+	font-family: the-blacklist;
+	transition: color 0.2s ease;
+	color: gold;
+	padding-left: 10px;
+	border-left: solid gold 2px;
+	font-size: 32px;
+	text-shadow: 1px -2px 1px black;
 }

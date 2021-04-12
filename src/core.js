@@ -66,7 +66,7 @@ const coreContentController = (() => {
 		gitHubLink.innerText = 'Eric M. Todd';
 		gitHubLink.href = 'https://github.com/EricMTodd';
 		footer.appendChild(gitHubLink);
-		document.querySelector('#content').appendChild(footer);
+		document.body.appendChild(footer);
 	};
 
 	return {

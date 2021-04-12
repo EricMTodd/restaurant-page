@@ -19,13 +19,14 @@
 }
 
 html {
+	margin-top: 60px;
 	position: absolute;
 	top: 0;
 	background-image: url(../images/keg-taps-scaled.jpeg);
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin-left: 15%;
+	margin-left: 23%;
 	height: 700px;
 	width: 1000px;
 }

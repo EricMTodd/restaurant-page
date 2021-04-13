@@ -1,6 +1,7 @@
 const aboutPageController = (() => {
 	const renderAboutContainer = () => {
-		console.log('renderAboutContainer');
+		return (document.querySelector('#container').innerText =
+			'Hello from about.js!');
 	};
 	return {
 		renderAboutContainer,

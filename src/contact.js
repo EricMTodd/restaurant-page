@@ -1,6 +1,7 @@
 const contactPageController = (() => {
 	const renderContactContainer = () => {
-		console.log('renderContactContainer');
+		return (document.querySelector('#container').innerText =
+			'Hello from contact.js!');
 	};
 	return {
 		renderContactContainer,

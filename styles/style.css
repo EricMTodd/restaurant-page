@@ -40,9 +40,14 @@ body {
 }
 
 #container {
-	border-top: solid gold 2px;
-	margin: 10px 50px 0px 50px;
-	padding-top: 10px;
+	/* border-top: solid gold 2px; */
+	margin: 0px 50px 0px 50px;
+	/* padding-top: 10px; */
+}
+
+#divider {
+	padding-top: 30px;
+	width: 600px;
 }
 
 #nav a {

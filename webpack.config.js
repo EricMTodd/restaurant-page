@@ -1,4 +1,3 @@
-const { NONAME } = require('dns');
 const path = require('path');
 
 module.exports = {
@@ -7,5 +6,6 @@ module.exports = {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist'),
 	},
-	mode: 'none',
+	target: 'node',
+	mode: 'production',
 };

@@ -54,6 +54,13 @@ const indexController = (() => {
 		nav.appendChild(menuLink);
 	})();
 
+	const appendDivider = (() => {
+		let img = document.createElement('img');
+		img.id = 'divider';
+		img.src = '../dist/images/divider1.png';
+		content.appendChild(img);
+	})();
+
 	const createContainer = (() => {
 		let container = document.createElement('div');
 		container.id = 'container';

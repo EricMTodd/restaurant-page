@@ -1,7 +1,7 @@
 const contactPageController = (() => {
 	const renderContactContainer = () => {
 		let container = document.querySelector('#container');
-		(() => {
+		const createContactHeader = (() => {
 			let headerText = 'Contact Us';
 			if (!document.querySelector('#container-header')) {
 				let containerHeader = document.createElement('h1');
@@ -14,7 +14,7 @@ const contactPageController = (() => {
 				containerHeader.innerText = headerText;
 			}
 		})();
-		(() => {
+		const createContactBody = (() => {
 			let bodyText = `This is the contact info.`;
 			if (!document.querySelector('#container-body')) {
 				let containerBody = document.createElement('p');

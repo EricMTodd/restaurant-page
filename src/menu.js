@@ -1,7 +1,7 @@
 const menuPageController = (() => {
 	const renderMenuContainer = () => {
 		let container = document.querySelector('#container');
-		(() => {
+		const createMenuHeader = (() => {
 			let headerText = 'Our Menu';
 			if (!document.querySelector('#container-header')) {
 				let containerHeader = document.createElement('h1');
@@ -14,7 +14,7 @@ const menuPageController = (() => {
 				containerHeader.innerText = headerText;
 			}
 		})();
-		(() => {
+		const createMenuBody = (() => {
 			let bodyText = `This is the menu!`;
 			if (!document.querySelector('#container-body')) {
 				let containerBody = document.createElement('p');

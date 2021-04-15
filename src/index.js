@@ -57,7 +57,6 @@ const indexController = (() => {
 	const appendDivider = (() => {
 		let img = document.createElement('img');
 		img.id = 'divider';
-		// img.src = '../dist/images/divider7.png';
 		content.appendChild(img);
 	})();
 

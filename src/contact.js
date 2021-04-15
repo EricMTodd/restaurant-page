@@ -1,26 +1,32 @@
 const contactPageController = (() => {
 	const renderContactContainer = () => {
-		if (!document.querySelector('#container-header')) {
-			let container = document.querySelector('#container');
-			let containerHeader = document.createElement('h1');
-			containerHeader.id = 'container-header';
-			containerHeader.className = 'primary-text';
-			containerHeader.innerText = 'Contact Us';
-			container.appendChild(containerHeader);
-		} else {
-			let containerHeader = document.querySelector('#container-header');
-			containerHeader.innerText = 'Contact Us';
-		}
-		if (!document.querySelector('#container-body')) {
-			let containerBody = document.createElement('p');
-			containerBody.id = 'container-body';
-			containerBody.className = 'secondary-text';
-			containerBody.innerText = `This is the contact info.`;
-			container.appendChild(containerBody);
-		} else {
-			let containerBody = document.querySelector('#container-body');
-			containerBody.innerText = `This is the contact info.`;
-		}
+		let container = document.querySelector('#container');
+		(() => {
+			let headerText = 'Contact Us';
+			if (!document.querySelector('#container-header')) {
+				let containerHeader = document.createElement('h1');
+				containerHeader.id = 'container-header';
+				containerHeader.className = 'primary-text';
+				containerHeader.innerText = headerText;
+				container.appendChild(containerHeader);
+			} else {
+				let containerHeader = document.querySelector('#container-header');
+				containerHeader.innerText = headerText;
+			}
+		})();
+		(() => {
+			let bodyText = `This is the contact info.`;
+			if (!document.querySelector('#container-body')) {
+				let containerBody = document.createElement('p');
+				containerBody.id = 'container-body';
+				containerBody.className = 'secondary-text';
+				containerBody.innerText = bodyText;
+				container.appendChild(containerBody);
+			} else {
+				let containerBody = document.querySelector('#container-body');
+				containerBody.innerText = bodyText;
+			}
+		})();
 	};
 	return {
 		renderContactContainer,

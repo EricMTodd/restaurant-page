@@ -1,26 +1,32 @@
 const menuPageController = (() => {
 	const renderMenuContainer = () => {
-		if (!document.querySelector('#container-header')) {
-			let container = document.querySelector('#container');
-			let containerHeader = document.createElement('h1');
-			containerHeader.id = 'container-header';
-			containerHeader.className = 'primary-text';
-			containerHeader.innerText = 'Our Menu';
-			container.appendChild(containerHeader);
-		} else {
-			let containerHeader = document.querySelector('#container-header');
-			containerHeader.innerText = 'Our Menu';
-		}
-		if (!document.querySelector('#container-body')) {
-			let containerBody = document.createElement('p');
-			containerBody.id = 'container-body';
-			containerBody.className = 'secondary-text';
-			containerBody.innerText = `This is the menu!`;
-			container.appendChild(containerBody);
-		} else {
-			let containerBody = document.querySelector('#container-body');
-			containerBody.innerText = `This is the menu!`;
-		}
+		let container = document.querySelector('#container');
+		(() => {
+			let headerText = 'Our Menu';
+			if (!document.querySelector('#container-header')) {
+				let containerHeader = document.createElement('h1');
+				containerHeader.id = 'container-header';
+				containerHeader.className = 'primary-text';
+				containerHeader.innerText = headerText;
+				container.appendChild(containerHeader);
+			} else {
+				let containerHeader = document.querySelector('#container-header');
+				containerHeader.innerText = headerText;
+			}
+		})();
+		(() => {
+			let bodyText = `This is the menu!`;
+			if (!document.querySelector('#container-body')) {
+				let containerBody = document.createElement('p');
+				containerBody.id = 'container-body';
+				containerBody.className = 'secondary-text';
+				containerBody.innerText = bodyText;
+				container.appendChild(containerBody);
+			} else {
+				let containerBody = document.querySelector('#container-body');
+				containerBody.innerText = bodyText;
+			}
+		})();
 	};
 	return {
 		renderMenuContainer,

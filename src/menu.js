@@ -1,6 +1,7 @@
 const menuPageController = (() => {
 	const renderMenuContainer = () => {
 		let container = document.querySelector('#container');
+
 		const createMenuHeader = (() => {
 			let headerText = 'Our Menu';
 			if (!document.querySelector('#container-header')) {
@@ -14,10 +15,11 @@ const menuPageController = (() => {
 				containerHeader.innerText = headerText;
 			}
 		})();
+
 		const createMenuBody = (() => {
 			let bodyText = `This is the menu!`;
 			if (!document.querySelector('#container-body')) {
-				let containerBody = document.createElement('p');
+				let containerBody = document.createElement('div');
 				containerBody.id = 'container-body';
 				containerBody.className = 'secondary-text';
 				containerBody.innerText = bodyText;
@@ -28,6 +30,7 @@ const menuPageController = (() => {
 			}
 		})();
 	};
+
 	return {
 		renderMenuContainer,
 	};

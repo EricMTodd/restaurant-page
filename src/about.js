@@ -1,6 +1,7 @@
 const aboutPageController = (() => {
 	const renderAboutContainer = () => {
 		let container = document.querySelector('#container');
+
 		const createAboutHeader = (() => {
 			let headerText = 'About Us';
 			if (!document.querySelector('#container-header')) {
@@ -14,20 +15,19 @@ const aboutPageController = (() => {
 				containerHeader.innerText = headerText;
 			}
 		})();
+
 		const createAboutBody = (() => {
 			let bodyText = `Located in the Docks District of Morath, The Boozy Badger is a must visit for any sea-weary sailor. With fine drink, food and good company, it's the best spot you can spend your shore leave!`;
 			if (!document.querySelector('#container-body')) {
-				let containerBody = document.createElement('p');
+				let containerBody = document.createElement('div');
 				containerBody.id = 'container-body';
 				containerBody.className = 'secondary-text';
-				containerBody.innerText = bodyText;
 				container.appendChild(containerBody);
-			} else {
-				let containerBody = document.querySelector('#container-body');
-				containerBody.innerText = bodyText;
 			}
+			containerBody.innerText = bodyText;
 		})();
 	};
+
 	return {
 		renderAboutContainer,
 	};

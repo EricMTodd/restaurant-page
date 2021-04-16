@@ -1,6 +1,7 @@
 const contactPageController = (() => {
 	const renderContactContainer = () => {
 		let container = document.querySelector('#container');
+
 		const createContactHeader = (() => {
 			let headerText = 'Contact Us';
 			if (!document.querySelector('#container-header')) {
@@ -14,10 +15,11 @@ const contactPageController = (() => {
 				containerHeader.innerText = headerText;
 			}
 		})();
+
 		const createContactBody = (() => {
 			let bodyText = `This is the contact info.`;
 			if (!document.querySelector('#container-body')) {
-				let containerBody = document.createElement('p');
+				let containerBody = document.createElement('div');
 				containerBody.id = 'container-body';
 				containerBody.className = 'secondary-text';
 				containerBody.innerText = bodyText;
@@ -28,6 +30,7 @@ const contactPageController = (() => {
 			}
 		})();
 	};
+
 	return {
 		renderContactContainer,
 	};

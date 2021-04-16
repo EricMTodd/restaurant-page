@@ -32,7 +32,19 @@ const aboutPageController = (() => {
 			})();
 
 			const renderEventsContainer = (() => {
-				console.log('events');
+				let eventsContainer = document.createElement('div');
+				eventsContainer.id = 'events-container';
+				eventsContainer.className = 'secondary-text';
+				document.querySelector('#page-body').appendChild(eventsContainer);
+
+				const renderEventsImage = (() => {
+					let eventsImage = document.createElement('img');
+					eventsImage.id = 'events-image';
+					eventsImage.alt = 'events-image';
+					document.querySelector('#events-container').appendChild(eventsImage);
+				})();
+
+				const renderEventsText = (() => {})();
 			})();
 
 			const renderLocationContainer = (() => {

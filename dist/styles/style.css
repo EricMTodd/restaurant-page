@@ -107,16 +107,20 @@ body {
 	color: white;
 }
 
-#services-container {
+#services-container,
+#events-container {
 	width: 600px;
 	margin: 0 auto;
+	margin-bottom: 10px;
 	border: 2px solid gold;
 	border-radius: 15px;
 	padding: 10px 0px 10px 0px;
 }
 
 #services-image,
-#services-text {
+#services-text,
+#events-image,
+#events-text {
 	display: inline-block;
 	margin: 0 auto;
 }

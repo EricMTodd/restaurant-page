@@ -11,8 +11,7 @@ const aboutPageController = (() => {
 				containerHeader.innerText = headerText;
 				container.appendChild(containerHeader);
 			} else {
-				let containerHeader = document.querySelector('#container-header');
-				containerHeader.innerText = headerText;
+				document.querySelector('#container-header').innerText = headerText;
 			}
 		})();
 
@@ -24,7 +23,7 @@ const aboutPageController = (() => {
 				containerBody.className = 'secondary-text';
 				container.appendChild(containerBody);
 			}
-			containerBody.innerText = bodyText;
+			document.querySelector('#container-body').innerText = bodyText;
 		})();
 	};
 

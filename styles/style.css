@@ -80,6 +80,10 @@ body {
 	border-left: solid gold 2px;
 }
 
+#page-body {
+	margin: 0 auto;
+}
+
 #footer {
 	text-align: center;
 	height: 20px;
@@ -101,4 +105,23 @@ body {
 #footer a:hover {
 	transition: color 0.2s ease;
 	color: white;
+}
+
+#services-container {
+	width: 600px;
+	margin: 0 auto;
+	border: 2px solid gold;
+	border-radius: 15px;
+	padding: 10px 0px 10px 0px;
+}
+
+#services-image,
+#services-text {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#services-image {
+	width: 20%;
+	border-radius: 15px;
 }

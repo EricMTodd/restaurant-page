@@ -1,15 +1,15 @@
 import { aboutPageController as about } from './about';
-import { contactPageController as contact } from './contact';
-import { menuPageController as menu } from './menu';
+// import { contactPageController as contact } from './contact';
+// import { menuPageController as menu } from './menu';
 
 const indexController = (() => {
-	const createHeader = (() => {
+	const renderHeader = (() => {
 		let header = document.createElement('div');
 		header.id = 'header';
 		document.querySelector('#content').appendChild(header);
 	})();
 
-	const createTitle = (() => {
+	const renderTitle = (() => {
 		let title = document.createElement('div');
 		title.id = 'title';
 		header.className = 'primary-text';
@@ -17,7 +17,7 @@ const indexController = (() => {
 		document.querySelector('#header').appendChild(title);
 	})();
 
-	const createTagline = (() => {
+	const renderTagline = (() => {
 		let tagline = document.createElement('div');
 		tagline.id = 'tagline';
 		tagline.className = 'secondary-text';
@@ -25,50 +25,68 @@ const indexController = (() => {
 		document.querySelector('#header').appendChild(tagline);
 	})();
 
-	const createNav = (() => {
+	const renderNav = (() => {
 		let nav = document.createElement('div');
 		nav.id = 'nav';
 		document.querySelector('#content').appendChild(nav);
 
-		let aboutLink = document.createElement('a');
-		aboutLink.id = 'about-link';
-		aboutLink.className = 'secondary-text';
-		aboutLink.innerText = 'About';
-		aboutLink.addEventListener('click', (e) => about.renderAboutContainer());
-		nav.appendChild(aboutLink);
+		const renderAboutLink = (() => {
+			let aboutLink = document.createElement('a');
+			aboutLink.id = 'about-link';
+			aboutLink.className = 'secondary-text';
+			aboutLink.innerText = 'About';
+			// aboutLink.addEventListener('click', (e) => about.renderAboutContainer());
+			aboutLink.addEventListener('click', (e) => console.log('aboutLink'));
+			nav.appendChild(aboutLink);
+		})();
 
-		let contactLink = document.createElement('a');
-		contactLink.id = 'contact-link';
-		contactLink.className = 'secondary-text';
-		contactLink.innerText = 'Contact';
-		contactLink.addEventListener('click', (e) =>
-			contact.renderContactContainer()
-		);
-		nav.appendChild(contactLink);
+		const renderContactLink = (() => {
+			let contactLink = document.createElement('a');
+			contactLink.id = 'contact-link';
+			contactLink.className = 'secondary-text';
+			contactLink.innerText = 'Contact';
+			// contactLink.addEventListener('click', (e) =>
+			// 	contact.renderContactContainer()
+			// );
+			contactLink.addEventListener('click', (e) => console.log('contactLink'));
 
-		let menuLink = document.createElement('a');
-		menuLink.id = 'menu-link';
-		menuLink.className = 'secondary-text';
-		menuLink.innerText = 'Menu';
-		menuLink.addEventListener('click', (e) => menu.renderMenuContainer());
-		nav.appendChild(menuLink);
+			nav.appendChild(contactLink);
+		})();
+
+		const renderMenuLik = (() => {
+			let menuLink = document.createElement('a');
+			menuLink.id = 'menu-link';
+			menuLink.className = 'secondary-text';
+			menuLink.innerText = 'Menu';
+			// menuLink.addEventListener('click', (e) => menu.renderMenuContainer());
+			menuLink.addEventListener('click', (e) => console.log('menuLink'));
+
+			nav.appendChild(menuLink);
+		})();
 	})();
 
-	const appendDivider = (() => {
+	const renderDivider = (() => {
 		let img = document.createElement('img');
 		img.id = 'divider';
 		document.querySelector('#content').appendChild(img);
 	})();
 
-	const createContainer = (() => {
-		let container = document.createElement('div');
-		container.id = 'container';
-		container.className = 'secondary-text';
-		document.querySelector('#content').appendChild(container);
-		about.renderAboutContainer();
+	const renderPageTitle = (() => {
+		let pageTitle = document.createElement('div');
+		pageTitle.id = 'page-title';
+		pageTitle.className = 'primary-text';
+		document.querySelector('#content').appendChild(pageTitle);
 	})();
 
-	const createFooter = (() => {
+	const renderPageBody = (() => {
+		let pageBody = document.createElement('div');
+		pageBody.id = 'page-body';
+		pageBody.className = 'secondary-text';
+		document.querySelector('#content').appendChild(pageBody);
+		about.renderAboutPage();
+	})();
+
+	const renderFooter = (() => {
 		let footer = document.createElement('div');
 		footer.id = 'footer';
 

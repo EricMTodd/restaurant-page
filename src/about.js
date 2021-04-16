@@ -1,34 +1,47 @@
 const aboutPageController = (() => {
-	const renderAboutContainer = () => {
-		let container = document.querySelector('#container');
-
-		const createAboutHeader = (() => {
-			let headerText = 'About Us';
-			if (!document.querySelector('#container-header')) {
-				let containerHeader = document.createElement('div');
-				containerHeader.id = 'container-header';
-				containerHeader.className = 'primary-text';
-				containerHeader.innerText = headerText;
-				container.appendChild(containerHeader);
-			} else {
-				document.querySelector('#container-header').innerText = headerText;
-			}
+	const renderAboutPage = () => {
+		const renderAboutPageTitle = (() => {
+			document.querySelector('#page-title').innerText = 'About us';
 		})();
 
-		const createAboutBody = (() => {
-			let bodyText = `Located in the Docks District of Morath, The Boozy Badger is a must visit for any sea-weary sailor. With fine drink, food and good company, it's the best spot you can spend your shore leave!`;
-			if (!document.querySelector('#container-body')) {
-				let containerBody = document.createElement('div');
-				containerBody.id = 'container-body';
-				containerBody.className = 'secondary-text';
-				container.appendChild(containerBody);
-			}
-			document.querySelector('#container-body').innerText = bodyText;
+		const renderAboutPageBody = (() => {
+			const renderServicesContainer = (() => {
+				let servicesContainer = document.createElement('div');
+				servicesContainer.id = 'services-container';
+				servicesContainer.className = 'secondary-text';
+				document.querySelector('#page-body').appendChild(servicesContainer);
+
+				const renderServicesImage = (() => {
+					let servicesImage = document.createElement('img');
+					servicesImage.id = 'services-image';
+					servicesImage.src = '../dist/images/about/drinking-pirates1.jpg';
+					servicesImage.alt = 'services-image';
+					document
+						.querySelector('#services-container')
+						.appendChild(servicesImage);
+				})();
+
+				const renderServicesText = (() => {
+					let servicesText = document.createElement('div');
+					servicesText.id = 'services-text';
+					servicesText.innerText = 'Services';
+					document
+						.querySelector('#services-container')
+						.appendChild(servicesText);
+				})();
+			})();
+
+			const renderEventsContainer = (() => {
+				console.log('events');
+			})();
+
+			const renderLocationContainer = (() => {
+				console.log('location');
+			})();
 		})();
 	};
-
 	return {
-		renderAboutContainer,
+		renderAboutPage,
 	};
 })();
 

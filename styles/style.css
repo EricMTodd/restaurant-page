@@ -108,7 +108,8 @@ body {
 }
 
 #services-container,
-#events-container {
+#events-container,
+#location-container {
 	width: 600px;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -117,10 +118,12 @@ body {
 	padding: 10px 0px 10px 0px;
 }
 
-#services-image,
+/* #services-image, */
 #services-text,
 #events-image,
-#events-text {
+#events-text,
+#location-image,
+#location-text {
 	display: inline-block;
 	margin: 0 auto;
 }
@@ -128,4 +131,10 @@ body {
 #services-image {
 	width: 20%;
 	border-radius: 15px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+}
+
+#services-text {
+	text-align: left;
 }

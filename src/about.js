@@ -10,7 +10,7 @@ const aboutPageController = (() => {
 				let servicesContainer = document.createElement('div');
 				servicesContainer.id = 'services-container';
 				servicesContainer.className = 'secondary-text';
-				servicesContainer.innerHTML = `<img id='services-image' src='../dist/images/about/drinking-pirates1.jpg' > Services are available 24 hours. Room and board with plenty of fine company!`;
+				servicesContainer.innerHTML = `<img id='services-image' src='https://i.imgur.com/i9chLLX.jpg' > Services are available 24 hours. Room and board with plenty of fine company!`;
 				pageBody.appendChild(servicesContainer);
 			})();
 
@@ -18,7 +18,7 @@ const aboutPageController = (() => {
 				let eventsContainer = document.createElement('div');
 				eventsContainer.id = 'events-container';
 				eventsContainer.className = 'secondary-text';
-				eventsContainer.innerHTML = `<img id='events-image' src='../dist/images/about/drinking-pirates2.jpg' > Events are held bi-weekly hiring local talent only. Everything from minstrels to exotic dancers.`;
+				eventsContainer.innerHTML = `<img id='events-image' src='https://i.imgur.com/p78gZTe.jpg' > Events are held bi-weekly hiring local talent only. Everything from minstrels to exotic dancers.`;
 				pageBody.appendChild(eventsContainer);
 			})();
 
@@ -26,7 +26,7 @@ const aboutPageController = (() => {
 				let locationContainer = document.createElement('div');
 				locationContainer.id = 'location-container';
 				locationContainer.className = 'secondary-text';
-				locationContainer.innerHTML = `<img id='location-image' src='../dist/images/about/drinking-pirates3.jpg' > The Boozy Badger is located in the docks district in the city of Morath on the southern tip on the Isle of Valkenkrig.`;
+				locationContainer.innerHTML = `<img id='location-image' src='https://i.imgur.com/je2aOQo.jpg' > The Boozy Badger is located in the docks district in the city of Morath on the southern tip on the Isle of Valkenkrig.`;
 				pageBody.appendChild(locationContainer);
 			})();
 		})();

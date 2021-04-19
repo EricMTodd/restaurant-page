@@ -120,21 +120,25 @@ body {
 
 /* #services-image, */
 #services-text,
-#events-image,
+/* #events-image, */
 #events-text,
-#location-image,
+/* #location-image, */
 #location-text {
 	display: inline-block;
 	margin: 0 auto;
 }
 
-#services-image {
+#services-image,
+#events-image,
+#location-image {
 	width: 20%;
 	border-radius: 15px;
 	float: left;
 	margin: 0px 0px 10px 10px;
 }
 
-#services-text {
+#services-text,
+#events-text,
+#location-text {
 	text-align: left;
 }

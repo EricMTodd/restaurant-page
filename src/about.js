@@ -35,18 +35,20 @@ const aboutPageController = (() => {
 				eventsContainer.className = 'secondary-text';
 				pageBody.appendChild(eventsContainer);
 
-				const renderEventsText = (() => {
-					let eventsText = document.createElement('div');
-					eventsText.id = 'events-text';
-					eventsText.innerText = 'Events';
-					eventsContainer.appendChild(eventsText);
-				})();
-
 				const renderEventsImage = (() => {
 					let eventsImage = document.createElement('img');
 					eventsImage.id = 'events-image';
+					eventsImage.src = '../dist/images/about/drinking-pirates2.jpg';
 					eventsImage.alt = 'events-image';
 					eventsContainer.appendChild(eventsImage);
+				})();
+
+				const renderEventsText = (() => {
+					let eventsText = document.createElement('div');
+					eventsText.id = 'events-text';
+					eventsText.innerText =
+						'Events are held bi-weekly hiring local talent only. Everything from minstrels to exotic dancers';
+					eventsContainer.appendChild(eventsText);
 				})();
 			})();
 
@@ -59,6 +61,7 @@ const aboutPageController = (() => {
 				const renderLocationImage = (() => {
 					let locationImage = document.createElement('img');
 					locationImage.id = 'location-image';
+					locationImage.src = '../dist/images/about/drinking-pirates3.jpg';
 					locationImage.alt = 'location-image';
 					locationContainer.appendChild(locationImage);
 				})();
@@ -67,7 +70,8 @@ const aboutPageController = (() => {
 					let locationText = document.createElement('div');
 					locationText.id = 'location-text';
 					locationText.className = 'secondary-text';
-					locationText.innerText = 'Location';
+					locationText.innerText =
+						'The Boozy Badger is located in the docks district in the city of Morath on the southern tip of the Isle of Valkenkrig.';
 					locationContainer.appendChild(locationText);
 				})();
 			})();

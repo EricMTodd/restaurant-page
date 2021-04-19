@@ -7,5 +7,5 @@ Lesson link: https://theodinproject.com/paths/full-stack-javascript/courses/java
 ## TODO
 
 - Create about tab (done)
-- Create contact tab (done)
-- Create menu tab (done)
+- Create contact tab
+- Create menu tab

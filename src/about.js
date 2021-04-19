@@ -1,10 +1,10 @@
 const aboutPageController = (() => {
 	const renderAboutPage = () => {
 		let pageBody = document.querySelector('#page-body');
+		pageBody.innerHTML = '';
 		const renderAboutPageTitle = (() => {
 			document.querySelector('#page-title').innerText = 'About us';
 		})();
-
 		const renderAboutPageBody = (() => {
 			const renderServicesContainer = (() => {
 				let servicesContainer = document.createElement('div');
@@ -31,6 +31,7 @@ const aboutPageController = (() => {
 			})();
 		})();
 	};
+
 	return {
 		renderAboutPage,
 	};

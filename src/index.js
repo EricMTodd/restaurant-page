@@ -1,8 +1,12 @@
 import { aboutPageController as about } from './about';
-// import { contactPageController as contact } from './contact';
-// import { menuPageController as menu } from './menu';
+import { contactPageController as contact } from './contact';
+import { menuPageController as menu } from './menu';
 
 const indexController = (() => {
+	const resetPageBody = () => {
+		console.log('click');
+		// document.querySelector('#page-body').innerHTML = '';
+	};
 	const renderHeader = (() => {
 		let header = document.createElement('div');
 		header.id = 'header';
@@ -35,8 +39,7 @@ const indexController = (() => {
 			aboutLink.id = 'about-link';
 			aboutLink.className = 'secondary-text';
 			aboutLink.innerText = 'About';
-			// aboutLink.addEventListener('click', (e) => about.renderAboutContainer());
-			aboutLink.addEventListener('click', (e) => console.log('aboutLink'));
+			aboutLink.addEventListener('click', (e) => about.renderAboutPage());
 			nav.appendChild(aboutLink);
 		})();
 
@@ -45,11 +48,7 @@ const indexController = (() => {
 			contactLink.id = 'contact-link';
 			contactLink.className = 'secondary-text';
 			contactLink.innerText = 'Contact';
-			// contactLink.addEventListener('click', (e) =>
-			// 	contact.renderContactContainer()
-			// );
-			contactLink.addEventListener('click', (e) => console.log('contactLink'));
-
+			contactLink.addEventListener('click', (e) => contact.renderContactPage());
 			nav.appendChild(contactLink);
 		})();
 
@@ -58,8 +57,7 @@ const indexController = (() => {
 			menuLink.id = 'menu-link';
 			menuLink.className = 'secondary-text';
 			menuLink.innerText = 'Menu';
-			// menuLink.addEventListener('click', (e) => menu.renderMenuContainer());
-			menuLink.addEventListener('click', (e) => console.log('menuLink'));
+			menuLink.addEventListener('click', (e) => menu.renderMenuPage());
 
 			nav.appendChild(menuLink);
 		})();
@@ -104,5 +102,9 @@ const indexController = (() => {
 		document.body.appendChild(footer);
 	})();
 
-	return {};
+	return {
+		resetPageBody,
+	};
 })();
+
+export { indexController };

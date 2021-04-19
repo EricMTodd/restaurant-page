@@ -1,3 +1,5 @@
+/* Global styling */
+
 @font-face {
 	font-family: cloister-black;
 	src: url(../fonts/cloister-black.ttf);
@@ -38,6 +40,8 @@ body {
 	text-align: center;
 	background-repeat: no-repeat;
 }
+
+/* Index styling */
 
 #container {
 	margin: 0px 50px 0px 50px;
@@ -106,6 +110,8 @@ body {
 	transition: color 0.2s ease;
 	color: white;
 }
+
+/* About page container styling */
 
 #services-container,
 #events-container,

@@ -111,34 +111,26 @@ body {
 #events-container,
 #location-container {
 	width: 600px;
+	min-height: 120px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border: 2px solid gold;
 	border-radius: 15px;
-	padding: 10px 0px 10px 0px;
-}
-
-/* #services-image, */
-#services-text,
-/* #events-image, */
-#events-text,
-/* #location-image, */
-#location-text {
-	display: inline-block;
-	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	text-align: left;
 }
 
 #services-image,
-#events-image,
 #location-image {
 	width: 20%;
 	border-radius: 15px;
 	float: left;
-	margin: 0px 0px 10px 10px;
+	margin-right: 10px;
 }
 
-#services-text,
-#events-text,
-#location-text {
-	text-align: left;
+#events-image {
+	width: 20%;
+	border-radius: 15px;
+	float: right;
+	clear: left;
 }

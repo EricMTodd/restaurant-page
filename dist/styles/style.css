@@ -116,7 +116,8 @@ body {
 
 #services-container,
 #events-container,
-#location-container {
+#location-container,
+#contact-information-container {
 	width: 600px;
 	min-height: 120px;
 	margin: 0 auto;

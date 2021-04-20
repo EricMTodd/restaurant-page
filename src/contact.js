@@ -12,6 +12,14 @@ const contactPageController = (() => {
 			contactInformationContainer.innerHTML = `<div>The Boozy Badger has a coop of trained carrier pidgeons. Just send a pidgeon and we will ensure it's safety and health is in good standing. Simply address the note to "Caitlyn" our coop keeper and she will handle all inquirys or requests.</div>`;
 			pageBody.appendChild(contactInformationContainer);
 		})();
+
+		const renderContactImageContainer = (() => {
+			console.log('makin bacon');
+			let contactImage = document.createElement('img');
+			contactImage.id = 'contact-image';
+			contactImage.src = 'https://i.imgur.com/eIeESz0.png';
+			pageBody.appendChild(contactImage);
+		})();
 	};
 	return {
 		renderContactPage,

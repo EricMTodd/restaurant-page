@@ -72,10 +72,18 @@ const menuPageController = (() => {
 			})();
 
 			const renderFriedPickles = (() => {
-				console.log('oops');
+				let friedPicklesContainer = document.createElement('div');
+				friedPicklesContainer.id = 'fried-pickles-container';
+
+				friedPicklesContainer.innerHTML = `
+				<div id='fried-pickles-title' class='secondary-text'>Fried Pickles</div>
+				<div class='secondary-text'>$4.00</div>
+				`;
+				startersContainer.appendChild(friedPicklesContainer);
 			})();
 		})();
 	};
+
 	return {
 		renderMenuPage,
 	};

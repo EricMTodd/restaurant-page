@@ -118,7 +118,8 @@ body {
 #contact-information-container,
 #contact-image,
 #drinks-container,
-#starters-container {
+#starters-container,
+#sandwiches-container {
 	width: 600px;
 	min-height: 120px;
 	margin: 0 auto;
@@ -131,12 +132,14 @@ body {
 }
 
 #drinks-container,
-#starters-container {
+#starters-container,
+#sandwiches-container {
 	padding-top: 0px;
 }
 
 #drinks-menu-title,
-#starters-title {
+#starters-title,
+#sandwiches-title {
 	text-align: center;
 	border-bottom: 2px solid gold;
 	margin-bottom: 15px;

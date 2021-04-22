@@ -101,6 +101,20 @@ const menuPageController = (() => {
 				startersContainer.appendChild(bloomingOnionContainer);
 			})();
 		})();
+
+		const renderSandwichesContainer = (() => {
+			let sandwichesContainer = document.createElement('div');
+			sandwichesContainer.id = 'sandwiches-container';
+			pageBody.appendChild(sandwichesContainer);
+
+			const renderSandwichesTitle = (() => {
+				let sandwichesTitle = document.createElement('div');
+				sandwichesTitle.id = 'sandwiches-title';
+				sandwichesTitle.className = 'primary-text';
+				sandwichesTitle.innerText = 'Sandwiches';
+				sandwichesContainer.appendChild(sandwichesTitle);
+			})();
+		})();
 	};
 
 	return {

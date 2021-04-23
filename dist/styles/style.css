@@ -166,28 +166,20 @@ body {
 #belgian-ale-container,
 #india-pale-ale-container,
 #fried-pickles-container,
-#jalapeno-poppers-container {
+#jalapeno-poppers-container,
+#pastrami-container,
+#chicken-pesto-container {
 	border-bottom: 2px solid gold;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
 
-#belgian-ale-container,
-#india-pale-ale-container,
-#pilsner-container,
-#fried-pickles-container,
-#jalapeno-poppers-container,
-#blooming-onion-container {
+.menu-item-container {
 	width: 600px;
 	height: 30px;
 }
 
-#belgian-ale-title,
-#india-pale-ale-title,
-#pilsner-title,
-#fried-pickles-title,
-#jalapeno-poppers-title,
-#blooming-onion-title {
+.menu-item-title {
 	float: left;
 }
 

@@ -112,14 +112,7 @@ body {
 	color: white;
 }
 
-#services-container,
-#events-container,
-#location-container,
-#contact-information-container,
-#contact-image,
-#drinks-container,
-#starters-container,
-#sandwiches-container {
+.primary-container {
 	width: 600px;
 	min-height: 120px;
 	margin: 0 auto;

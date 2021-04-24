@@ -9,6 +9,7 @@ const menuPageController = (() => {
 		const renderDrinksContainer = (() => {
 			let drinksContainer = document.createElement('div');
 			drinksContainer.id = 'drinks-container';
+			drinksContainer.className = 'primary-container';
 			pageBody.appendChild(drinksContainer);
 
 			const renderDrinksMenuTitle = (() => {
@@ -64,6 +65,7 @@ const menuPageController = (() => {
 		const renderStartersContainer = (() => {
 			let startersContainer = document.createElement('div');
 			startersContainer.id = 'starters-container';
+			startersContainer.className = 'primary-container';
 			pageBody.appendChild(startersContainer);
 
 			const renderStartersTitle = (() => {
@@ -112,6 +114,7 @@ const menuPageController = (() => {
 		const renderSandwichesContainer = (() => {
 			let sandwichesContainer = document.createElement('div');
 			sandwichesContainer.id = 'sandwiches-container';
+			sandwichesContainer.className = 'primary-container';
 			pageBody.appendChild(sandwichesContainer);
 
 			const renderSandwichesTitle = (() => {
